@@ -16,7 +16,7 @@ export default function Esqueleto() {
         texto={'REI DAS CAPINHAS'}
         placeholder={'Procure seu produto'}
       />
-      <SubMenu textoMenu={listas}/>
+      <SubMenu listaBotoes={listas}/>
       <Carrosel/>
     </Container>
   )

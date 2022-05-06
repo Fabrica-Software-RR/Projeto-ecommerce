@@ -1,17 +1,17 @@
 import { SubMenu, MenuHamburger, BotaoMenu } from './Styles'
 
-interface ITextoMenu {
-  textoMenu: string[]
+interface ListaDeBotoes {
+  listaBotoes: string[]
 }
 
-export default function RenderSubMenu({ textoMenu }: ITextoMenu) {
+export default function RenderSubMenu({ listaBotoes }: ListaDeBotoes) {
   return (
     <SubMenu>
       <MenuHamburger>
         <span></span>
       </MenuHamburger>
-      {textoMenu.map((texto, index) => (
-        <BotaoMenu key={index}>{texto}</BotaoMenu>
+      {listaBotoes.map((botao, index) => (
+        <BotaoMenu key={index}>{botao}</BotaoMenu>
       ))}
     </SubMenu>
   )
