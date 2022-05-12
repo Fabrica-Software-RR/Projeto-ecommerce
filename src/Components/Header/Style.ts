@@ -2,15 +2,16 @@ import styled from 'styled-components'
 import { Modal } from 'antd'
 
 
+const f = '/fundo.jpeg'
+
 export const Cabecalho = styled.header`
-background-color: black;
+background-image: ${f};
+height: 100vh;
 display: flex;
 align-items: center;
 justify-content: space-around;
 padding: 3em;
 width: 100%;
-height: 50%;
-overflow: hidden;
 @media screen and (max-width: 340px) {
   justify-content: space-between;
   align-items: center;
@@ -26,9 +27,12 @@ overflow: hidden;
 
 export const Logo = styled.div`
 display: flex;
-width: 35%;
-height: 20em;
+justify-content: center;
+align-items: center;
+width: 30%;
+height: 40%;
 font-weight: bold;
+overflow: hidden;
 @media screen and (max-width: 340px) {
   font-size: 24px;
   width: 100%;

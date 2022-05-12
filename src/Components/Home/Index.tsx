@@ -1,14 +1,17 @@
 //import { Layout } from 'antd';
 import { Container } from '../Container/Style'
-import  MenuHerder  from './Basicos/Index'
-import logo from '../../../public/logo.jpeg'
+import  MenuHerder  from '../Header/Index'
+import logo from '../../../public/Fotos/rei-png.png'
 import SubMenu from './SubMenu/Index'
 import Carrosel from '../Carrosel/Index'
+import CarroselDeCards from '../Cards/Index'
+import {listaBotoes } from '../ListaTeste/Lista'
 
-const listas = [ 'Todos Produtos', 'Ofertas', 'Novidades', 'Mais Vendidos' ]
 
 
 export default function Esqueleto() {
+
+
   return (
     <Container>
       <MenuHerder
@@ -16,8 +19,9 @@ export default function Esqueleto() {
         texto={'REI DAS CAPINHAS'}
         placeholder={'Procure seu produto'}
       />
-      <SubMenu listaBotoes={listas}/>
+      <SubMenu listaBotoes={listaBotoes}/>
       <Carrosel/>
+      <CarroselDeCards />
     </Container>
   )
 }

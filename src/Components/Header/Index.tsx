@@ -3,7 +3,7 @@ import { Divider } from 'antd'
 import { Input, Space } from 'antd'
 import { ShoppingCartOutlined } from '@ant-design/icons'
 import { Buscar, Cabecalho, Carrinho, Logo } from './Style'
-import Modal from '../../Modal/Index'
+import Modal from '../Modal/Index'
 import { useState } from 'react'
 
 interface IImage {
@@ -15,7 +15,6 @@ interface IImage {
 const { Search } = Input
 
 function MenuHerder({ logo, texto, placeholder, loading }: IImage) {
-  const [search, setSearch] = useState('')
   const [visible, setVisible] = useState(false)
 
   function onSearch(value: any) {
@@ -33,7 +32,7 @@ function MenuHerder({ logo, texto, placeholder, loading }: IImage) {
   return (
     <Cabecalho>
       <Logo>
-        <Image src={logo} alt="Logo" width={300} height={200} />
+        <Image src={logo} alt="Logo" layout={'fill'} />
       </Logo>
       <Divider type="vertical" />
       <Buscar>

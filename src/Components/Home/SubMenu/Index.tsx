@@ -1,10 +1,7 @@
+import { ListaDeBotoes } from '../../Interfaces/Interface'
 import { SubMenu, MenuHamburger, BotaoMenu } from './Styles'
 
-interface ListaDeBotoes {
-  listaBotoes: string[]
-}
-
-export default function RenderSubMenu({ listaBotoes }: ListaDeBotoes) {
+function RenderSubMenu({ listaBotoes }: ListaDeBotoes) {
   return (
     <SubMenu>
       <MenuHamburger>
@@ -16,3 +13,4 @@ export default function RenderSubMenu({ listaBotoes }: ListaDeBotoes) {
     </SubMenu>
   )
 }
+export default RenderSubMenu
