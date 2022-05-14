@@ -3,7 +3,6 @@ import { Container } from '../Container/Style'
 import  MenuHerder  from '../Header/Index'
 import logo from '../../../public/Fotos/rei-png.png'
 import SubMenu from './SubMenu/Index'
-import Carrosel from '../Carrosel/Index'
 import CarroselDeCards from '../Cards/Index'
 import {listaBotoes } from '../ListaTeste/Lista'
 
@@ -20,7 +19,6 @@ export default function Esqueleto() {
         placeholder={'Procure seu produto'}
       />
       <SubMenu listaBotoes={listaBotoes}/>
-      <Carrosel/>
       <CarroselDeCards />
     </Container>
   )

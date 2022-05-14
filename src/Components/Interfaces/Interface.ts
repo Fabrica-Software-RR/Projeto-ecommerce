@@ -3,6 +3,12 @@ import { StaticImageData } from "next/image";
 export interface ListaImagens {
   ImagemCarrosel : string[];
 }
+export interface IImage {
+  logo: StaticImageData
+  texto: string
+  placeholder: string
+  loading?: boolean
+}
 
 
 

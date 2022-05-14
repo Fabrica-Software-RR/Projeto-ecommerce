@@ -1,87 +1,40 @@
 import styled from 'styled-components'
-import { Modal } from 'antd'
-
-
 const f = '/fundo.jpeg'
+const logo = '/Fotos/rei-png.png'
 
 export const Cabecalho = styled.header`
-background-image: ${f};
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: space-around;
-padding: 3em;
-width: 100%;
-@media screen and (max-width: 340px) {
-  justify-content: space-between;
-  align-items: center;
-  font-size: 24px;
-  flex-wrap: wrap;
-  margin: 5px;
-}
- p{
-   color: white;
- }
-
-`
-
-export const Logo = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-width: 30%;
-height: 40%;
-font-weight: bold;
-overflow: hidden;
-@media screen and (max-width: 340px) {
-  font-size: 24px;
-  width: 100%;
-  height: 100%;
-  margin: 5px;
-}
-`
-
-export const Buscar = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 50%;
-height: 50px;
-`
-
-export const Carrinho = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-width: 2em;
-height: 2em;
-border-radius: 50%;
-font-size: 36px;
-font-weight: bold;
-cursor: pointer;
-`
-
-
-export const ModalStyled = styled(Modal)`
-  width: 100%;
-  height: 100%;
-  background-color: #fdba74;
   display: flex;
-  align-items: center;
+  width: 100%;
+  height: 100%;
   justify-content: center;
-  flex-direction: column;
-  overflow: hidden;
-  @media screen and (max-width: 340px) {
+  background-color: #f59e0b;
+  background-image: url(${f});
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  @media screen and (min-width: 375px) {
+    justify-content: space-around;
+    align-items: center;
     font-size: 24px;
-    width: 100%;
-    height: 100%;
-    margin: 5px;
   }
 `
 
-export const Rodape = styled.footer`
-background-color: red;
+export const Logo = styled.div`
+  display: flex;
+  margin: 0px px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80vh;
+  background-image: url(${logo});
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 415px) {
+    width: 100%;
+    background-size: 100%;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+    font-size: 10px;
+  }
 `
-
