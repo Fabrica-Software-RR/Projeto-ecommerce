@@ -4,7 +4,7 @@ export interface ListaImagens {
   ImagemCarrosel : string[];
 }
 export interface IImage {
-  logo: StaticImageData
+  logo?: StaticImageData | string;
   texto: string
   placeholder: string
   loading?: boolean

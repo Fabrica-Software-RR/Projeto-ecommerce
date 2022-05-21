@@ -6,10 +6,7 @@ export const Cabecalho = styled.header`
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: center;
   background-color: #f59e0b;
-  background-image: url(${f});
-  background-repeat: no-repeat, repeat;
   background-size: cover;
   @media screen and (min-width: 375px) {
     justify-content: space-around;
@@ -20,14 +17,12 @@ export const Cabecalho = styled.header`
 
 export const Logo = styled.div`
   display: flex;
-  margin: 0px px;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 80vh;
-  background-image: url(${logo});
+  margin: 0px 0px;
+  position: relative;
+  width: 10%;
+  height: 10vh;
   background-position: center;
-  background-size: 100%;
+  background-size: contain;
   background-repeat: no-repeat;
   @media screen and (max-width: 415px) {
     width: 100%;
