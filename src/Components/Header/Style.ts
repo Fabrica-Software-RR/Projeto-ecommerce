@@ -1,12 +1,10 @@
 import styled from 'styled-components'
-const f = '/fundo.jpeg'
-const logo = '/Fotos/rei-png.png'
+
 
 export const Cabecalho = styled.header`
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: #f59e0b;
   background-size: cover;
   @media screen and (min-width: 375px) {
     justify-content: space-around;

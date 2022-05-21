@@ -8,7 +8,6 @@ export const SubMenu = styled.div`
   justify-content: space-around;
   width: 100%;
   height: 80px;
-  background-color: #f25c05;
   font-size: 24px;
   color: white;
   font-weight: bold;
@@ -23,6 +22,7 @@ export const MenuHamburger = styled(MenuOutlined)`
   font-size: 24px;
   cursor: pointer;
   margin: 10px;
+  color: black;
   @media screen and (min-width: 415px) {
     display: none;
     align-items: center;
@@ -42,7 +42,7 @@ export const BotaoMenu = styled.button`
   display: flex;
   justify-content: center;
   border-radius: 5px;
-  background-color: #f25c05;
+  color: black;
   @media screen and (max-width: 415px) {
     display: none;
     align-items: center;
@@ -66,12 +66,14 @@ export const Buscar = styled.div`
 
 export const Carrinho = styled.div`
   display: flex;
+  color: black;
   align-items: center;
-  justify-content: right;
-  width: 2em;
-  height: 2em;
+  justify-content: center;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 50%;
   font-size: 36px;
+  background-color: black;
   font-weight: bold;
   cursor: pointer;
 `

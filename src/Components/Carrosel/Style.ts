@@ -2,10 +2,11 @@ import { Carousel } from 'antd'
 import styled from 'styled-components'
 
 export const ContainerCarrosel = styled.div`
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 400px;
-  background-color: #f59e0b;
+  height: 200px;
   @media screen and (min-width: 375px) {
       display: block;
       justify-content: space-around;
@@ -16,15 +17,14 @@ export const ContainerCarrosel = styled.div`
     }
   `
 export const StyledCarousel = styled(Carousel)`
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 400px;
-  background-color: aqua;
   @media screen and (min-width: 375px) {
-      display: block;
-      justify-content: space-around;
+      display: flex;
+      justify-content:center;
       align-items: center;
       width: 100%;
       font-size: 24px;
@@ -33,7 +33,7 @@ export const StyledCarousel = styled(Carousel)`
   `
 export const Cards = styled.div`
   display: flex;
-  margin: ;
+  margin:0px;
   width: 100%;
   height: 400px;
   justify-content: center;
