@@ -57,6 +57,7 @@ export const BotaoMenu = styled.button`
 
 export const Buscar = styled.div`
   display: flex;
+  background-color: aliceblue;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -73,9 +74,12 @@ export const Carrinho = styled.div`
   height: 1.5em;
   border-radius: 50%;
   font-size: 36px;
-  background-color: black;
   font-weight: bold;
   cursor: pointer;
+    :hover {
+    transition: 0.5s;
+    background-color: #f28705;
+  }
 `
 
 export const ModalStyled = styled(Modal)`

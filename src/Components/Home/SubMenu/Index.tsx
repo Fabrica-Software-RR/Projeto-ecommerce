@@ -11,6 +11,10 @@ function RenderSubMenu({ listaBotoes }: ListaDeBotoes) {
     console.log(value)
   }
 
+  function onVisibleChange(visible: boolean) {
+    setVisible(visible)
+  }
+
   function carrinho() {
     setVisible(true)
   }
@@ -21,15 +25,7 @@ function RenderSubMenu({ listaBotoes }: ListaDeBotoes) {
 
   return (
     <SubMenu>
-      <MenuHamburger></MenuHamburger>
-      <Carrinho>
-        <ShoppingCartOutlined
-          onClick={() => {
-            carrinho()
-          }}
-          style={{ fontSize: '36px', color: 'white', cursor: 'pointer' }}
-        />
-      </Carrinho>
+      <MenuHamburger onClick={() =>onVisibleChange(true)}></MenuHamburger>
       {listaBotoes.map((botao, index) => (
         <BotaoMenu key={index}>{botao}</BotaoMenu>
       ))}
@@ -40,6 +36,14 @@ function RenderSubMenu({ listaBotoes }: ListaDeBotoes) {
         onOk={fecharModal}
         texto={'Estes são os itens que você adicionou no carrinho :'}
       />
+        <Carrinho>
+        <ShoppingCartOutlined
+          onClick={() => {
+            carrinho()
+          }}
+          style={{ fontSize: '36px', color: 'black', cursor: 'pointer' }}
+        />
+      </Carrinho>
     </SubMenu>
   )
 }

@@ -1,3 +1,5 @@
+import { Button } from 'antd'
+import { Buscar } from '../Home/SubMenu/Styles'
 import { IImage } from '../Interfaces/Interface'
 import { Cabecalho, Logo } from './Style'
 

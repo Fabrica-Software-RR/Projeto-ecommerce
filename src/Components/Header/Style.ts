@@ -3,9 +3,11 @@ import styled from 'styled-components'
 
 export const Cabecalho = styled.header`
   display: flex;
+  align-items: center;
+  justify-content: left;
+  position: relative;
   width: 100%;
   height: 100%;
-  background-size: cover;
   @media screen and (min-width: 375px) {
     justify-content: space-around;
     align-items: center;
@@ -15,19 +17,17 @@ export const Cabecalho = styled.header`
 
 export const Logo = styled.div`
   display: flex;
-  margin: 0px 0px;
-  position: relative;
+  margin: 20px 0px;
   width: 10%;
   height: 10vh;
   background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
   @media screen and (max-width: 415px) {
     width: 100%;
-    background-size: 100%;
+    background-size: contain;
     align-items: center;
     background-position: center;
     justify-content: center;
-    font-size: 10px;
+    background-repeat: no-repeat;
   }
 `
