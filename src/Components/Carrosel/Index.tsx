@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import { Cards } from './Style'
-import Image from 'next/image'
 import { StyledCarousel, ContainerCarrosel } from './Style'
 import {listaImagens} from '../ListaTeste/Lista'
 
@@ -10,7 +10,7 @@ function CarroselDeCards(): JSX.Element {
       <StyledCarousel autoplay>
         {listaImagens .map((imagem )  => (
             <Cards key={imagem.id}>
-              <Image
+              <img
                 src={imagem.url as string}
                 alt={imagem.title}
                 loading="lazy"
