@@ -21,12 +21,14 @@ export const Logo = styled.div`
   left: 50px;
   padding: 10px;
   width: 100%;
-  height: 50%;
+  height: 100%;
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
   @media screen and (max-width: 415px) {
+    display: flex;
     width: 100%;
+    height: 50%;
     background-size: contain;
     align-items: center;
     background-position: center;

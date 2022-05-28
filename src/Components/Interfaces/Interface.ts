@@ -10,8 +10,6 @@ export interface IImage {
   loading?: boolean
 }
 
-
-
 export interface ListaImageCarrosel extends  StaticImageData {
   id : number;
   url : StaticImageData | string;

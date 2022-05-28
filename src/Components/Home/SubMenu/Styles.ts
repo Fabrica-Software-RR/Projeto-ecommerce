@@ -11,6 +11,7 @@ export const SubMenu = styled.div`
   font-size: 24px;
   color: white;
   font-weight: bold;
+  background-color: aliceblue;
   @media screen and (max-width: 340px) {
     justify-content: space-around;
     align-items: center;
