@@ -3,25 +3,36 @@ import styled from 'styled-components'
 
 export const ContainerCarrosel = styled.div`
   display: block;
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 400px;
+  height:100%;
   `
 export const StyledCarousel = styled(Carousel)`
-
+display: block;
+position:absolute;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+//background-color: blue;
   `
 export const CardCarrosel = styled(Card)`
-  display: flex;
-  flex-direction: column;
-  margin: 200px 200px;
-  padding: 0px 0px  0px 00px;
-  margin:0px;
-  width: 80%;
-  background-size: cover;
-  height: 200px;
-  background-color: #f5f5f5;
+  display: block;
+  width: 600px;
+  height: 600px;
+  background-size: contain;
   justify-content: center;
   align-items: center;
 `
+
+export const ImageCarrosel = styled.img`
+
+  width: 100%;
+  height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+`
+
 
 

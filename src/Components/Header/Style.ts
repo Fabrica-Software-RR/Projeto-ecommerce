@@ -6,7 +6,7 @@ export const Cabecalho = styled.header`
   justify-content:space-evenly;
   position: relative;
   width: 100%;
-  height: 20%;
+  height: 50%;
   background-color: #f5f5f5;
   @media screen and (min-width: 375px) {
     justify-content: space-around;
@@ -17,18 +17,19 @@ export const Cabecalho = styled.header`
 
 export const Logo = styled.div`
   display: flex;
+  position: relative;
   margin: 20px 0px;
-  left: 50px;
+  right: 10px;
   padding: 10px;
-  width: 100%;
-  height: 100%;
-  background-position: left;
+  width: 30%;
+  height:100%;
+ // background-color: blue;
   background-size: contain;
   background-repeat: no-repeat;
   @media screen and (max-width: 415px) {
     display: flex;
-    width: 100%;
-    height: 50%;
+    width: 40%;
+    height: 100%;
     background-size: contain;
     align-items: center;
     background-position: center;

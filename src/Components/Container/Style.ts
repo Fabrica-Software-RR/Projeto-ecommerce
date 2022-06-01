@@ -10,26 +10,28 @@ export const Container = styled.div`
 `
 
 export const C = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  display: block;
+  margin: 0;
+  justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 40%;
 `
 
 //div carrosel ajustar no meio da tela
 export const B = styled.div`
-  display: flex;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  margin: 0;
   width: 100%;
-  height: 100%;
-  background-color: black;
+  height: 80%;
 `
 
-export const A = styled.div`
-  display: block;
-  position: relative;
+export const A = styled.div` // Cards Categoria
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  background-color: cornflowerblue;
+  height: auto;
 `
