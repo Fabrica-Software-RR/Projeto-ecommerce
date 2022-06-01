@@ -29,7 +29,6 @@ function CardExibicao(): ReactElement {
             imagem.categoria === categoria ? (
               <CardAnt
                 key={imagem.id}
-                honorable={true}
                 style={{ width: 300 }}
                 cover={
                   // eslint-disable-next-line @next/next/no-img-element
