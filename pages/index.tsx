@@ -1,4 +1,4 @@
-import Esqueleto from '../src/Components/Home/Index'
+import Esqueleto from '../src/Components/Entidades/Home/Index'
 
 export default function Home() {
 

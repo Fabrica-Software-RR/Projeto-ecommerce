@@ -1,7 +1,7 @@
 import { ShoppingCartOutlined } from '@ant-design/icons'
 import { useState } from 'react'
-import { ListaDeBotoes } from '../../Interfaces/Interface'
-import Modal from '../../Modal/Index'
+import { ListaDeBotoes } from '../../Servicos/Interfaces/Interface'
+import Modal from '../Modal/Index'
 import { SubMenu, MenuHamburger, BotaoMenu, Carrinho } from './Styles'
 
 function RenderSubMenu({ listaBotoes }: ListaDeBotoes) {
@@ -25,10 +25,11 @@ function RenderSubMenu({ listaBotoes }: ListaDeBotoes) {
 
   return (
     <SubMenu>
-      <MenuHamburger onClick={() =>onVisibleChange(true)}></MenuHamburger>
-      {listaBotoes.map((botao, index) => (
-        <BotaoMenu key={index}>{botao}</BotaoMenu>
-      ))}
+      <MenuHamburger onClick={() => onVisibleChange(true)}></MenuHamburger>
+      {listaBotoes &&
+        listaBotoes.map((botao, index) => (
+          <BotaoMenu key={index}>{botao}</BotaoMenu>
+        ))}
       <Modal
         visivel={visible}
         onClose={fecharModal}
@@ -36,7 +37,7 @@ function RenderSubMenu({ listaBotoes }: ListaDeBotoes) {
         onOk={fecharModal}
         texto={'Estes são os itens que você adicionou no carrinho :'}
       />
-        <Carrinho>
+      <Carrinho>
         <ShoppingCartOutlined
           onClick={() => {
             carrinho()
