@@ -37,14 +37,7 @@ function RenderSubMenu({ listaBotoes }: ListaDeBotoes) {
         onOk={fecharModal}
         texto={'Estes são os itens que você adicionou no carrinho :'}
       />
-      <Carrinho>
-        <ShoppingCartOutlined
-          onClick={() => {
-            carrinho()
-          }}
-          style={{ fontSize: '36px', color: 'black', cursor: 'pointer' }}
-        />
-      </Carrinho>
+
     </SubMenu>
   )
 }

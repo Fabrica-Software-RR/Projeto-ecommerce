@@ -3,12 +3,12 @@ import styled from 'styled-components'
 
 export const Cabecalho = styled.header`
   display: flex;
-  justify-content:space-evenly;
-  position: relative;
+  justify-content:space-around;
   width: 100%;
   height: 50%;
   background-color: #f5f5f5;
   @media screen and (min-width: 375px) {
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     font-size: 24px;

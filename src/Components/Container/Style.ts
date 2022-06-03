@@ -22,7 +22,6 @@ export const B = styled.div`
   display: block;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
   margin: 0;
   width: 100%;
   height: 80%;

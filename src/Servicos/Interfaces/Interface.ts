@@ -21,3 +21,9 @@ export interface ListaImageCarrosel extends  StaticImageData {
 export interface ListaDeBotoes {
   listaBotoes: string[]
 }
+
+
+export interface IInputNumberAnt {
+  pegarValor: (valor: number) => void
+  value: number
+}
