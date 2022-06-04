@@ -4,7 +4,6 @@ import {
   WhatsAppOutlined,
 } from '@ant-design/icons'
 import { Badge } from 'antd'
-import Search from 'antd/lib/transfer/search'
 import { IImage } from '../../Servicos/Interfaces/Interface'
 import { Cabecalho, Logo } from './Style'
 

@@ -1,4 +1,3 @@
-import { ShoppingCartOutlined } from '@ant-design/icons'
 import { useState } from 'react'
 import { ListaDeBotoes } from '../../Servicos/Interfaces/Interface'
 import Modal from '../Modal/Index'

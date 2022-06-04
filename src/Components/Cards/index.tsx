@@ -1,10 +1,9 @@
-import { Card, Avatar } from 'antd'
+import { Card, Avatar, Space } from 'antd'
 import {} from '@ant-design/icons'
 import { ReactElement, useState } from 'react'
 import { CardAnt, ContainerCard, ContainerCards } from './Style'
 import { listaImagens } from '../ListaTeste/Lista'
-import InputNumberAnt from '../Inputs/InputNumber'
-import BotãoAnt from '../Botoes'
+import InputForm from '../Inputs/InputAdcionar/Index'
 const { Meta } = Card
 const listaDeCategorias = [
   'Categoria 1',
@@ -13,9 +12,9 @@ const listaDeCategorias = [
   'Categoria 4',
 ]
 function CardExibicao(): ReactElement {
-  const [quantidade, setQuantidade] = useState<number>()
+  const [quantidade, setQuantidade] = useState<string>()
 
-  function handleValorInput(valor: number) {
+  function handleValorInput(valor: string): void {
     setQuantidade(valor)
   }
 
@@ -44,12 +43,12 @@ function CardExibicao(): ReactElement {
                     <img alt="example" src={imagem.url as string} />
                   }
                   actions={[
-                    <InputNumberAnt
-                      pegarValor={() => handleValorInput}
-                      value={quantidade as number}
+                    <InputForm
+                      onClick={() => {}}
+                      value={quantidade as string}
                       key={imagem.id}
+                      onChange={() => handleValorInput}
                     />,
-                    <BotãoAnt texto='Adicionar' key={imagem.id} />
                   ]}
                 >
                   {' '}

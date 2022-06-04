@@ -1,11 +1,17 @@
 import { Button } from 'antd';
 
+interface ButtonProps {
+  texto: string;
+  onClick: () => void;
+}
 
-function BotãoAnt({ texto }: { texto: string }): React.ReactElement {
+function BotaoAnt({ texto, onClick  }: ButtonProps): React.ReactElement {
   return (
-    <Button danger>{texto}</Button>
+    <Button
+      onClick={() => {}}
+    danger>{texto}</Button>
   );
 }
 
 
-export default BotãoAnt;
+export default BotaoAnt;
