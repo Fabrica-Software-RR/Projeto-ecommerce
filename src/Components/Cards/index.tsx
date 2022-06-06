@@ -1,6 +1,6 @@
 import { Card, Avatar, Space } from 'antd'
 import {} from '@ant-design/icons'
-import { ReactElement, useState } from 'react'
+import { ReactElement, useEffect, useState } from 'react'
 import { CardAnt, ContainerCard, ContainerCards } from './Style'
 import { listaImagens } from '../ListaTeste/Lista'
 import InputForm from '../Inputs/InputAdcionar/Index'
@@ -12,12 +12,16 @@ const listaDeCategorias = [
   'Categoria 4',
 ]
 function CardExibicao(): ReactElement {
-  const [quantidade, setQuantidade] = useState<string>()
-
-  function handleValorInput(valor: string): void {
-    setQuantidade(valor)
+  const [quantidade, setQuantidade] = useState<number>(0)
+  const [valor, setValor] = useState<number>(0)
+  function aumentarValor() {
+    setValor(valor + 1)
   }
+  useEffect(() => {
+    setQuantidade(valor)
+  },[valor])
 
+  console.log(quantidade)
   return (
     <ContainerCards>
       {listaDeCategorias.map((categoria) => (
@@ -44,10 +48,12 @@ function CardExibicao(): ReactElement {
                   }
                   actions={[
                     <InputForm
-                      onClick={() => {}}
-                      value={quantidade as string}
+                      diminuirValor={() => {}}
+                      aumentarValor={() => aumentarValor()}
+                      adicionarQuantidade={() => {}}
+                      value={quantidade as number}
                       key={imagem.id}
-                      onChange={() => handleValorInput}
+                      onChange={e => console.log(e.target.value)}
                     />,
                   ]}
                 >

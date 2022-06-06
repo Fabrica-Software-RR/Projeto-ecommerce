@@ -1,5 +1,5 @@
 import { Space } from 'antd'
-import { ReactElement, useState } from 'react'
+import { ReactElement} from 'react'
 import { InputForm } from '../../../Servicos/Interfaces/Interface'
 import BotaoAnt from '../../Botoes'
 import InputAnt from '../InputTexto/Index'
@@ -12,18 +12,15 @@ function InputForm({
   aumentarValor,
   adicionarQuantidade,
 }: InputForm): ReactElement {
-  const [quantidade, setQuantidade] = useState<string>();
-
   return (
     <div>
       <Space align='center'>
       <div>
-      <BotaoAnt onClick={diminuirValor} texto="-" key={key}/>
+      <BotaoAnt onClick={() =>diminuirValor} texto="-" key={key}/>
       <InputAnt onChange={onChange} value={value} key={key} />
-      <BotaoAnt texto="+" onClick={aumentarValor} key={key} />
+      <BotaoAnt texto="+" onClick={() => aumentarValor} key={key} />
       </div>
-   
-      <BotaoAnt onClick={adicionarQuantidade} texto="Adicionar" key={key} />
+      <BotaoAnt onClick={() =>adicionarQuantidade} texto="Adicionar" key={key} />
       </Space>
     </div>
   )
