@@ -13,15 +13,19 @@ const listaDeCategorias = [
 ]
 function CardExibicao(): ReactElement {
   const [quantidade, setQuantidade] = useState<number>(0)
-  const [valor, setValor] = useState<number>(0)
+
   function aumentarValor() {
-    setValor(valor + 1)
+    setQuantidade(quantidade + 1)
+  }
+
+  function diminuirValor() {
+    setQuantidade(quantidade -1)
   }
   useEffect(() => {
-    setQuantidade(valor)
-  },[valor])
+    setQuantidade(quantidade)
+  }, [quantidade])
 
-  console.log(quantidade)
+
   return (
     <ContainerCards>
       {listaDeCategorias.map((categoria) => (
@@ -48,12 +52,12 @@ function CardExibicao(): ReactElement {
                   }
                   actions={[
                     <InputForm
-                      diminuirValor={() => {}}
+                      diminuirValor={() => diminuirValor()}
                       aumentarValor={() => aumentarValor()}
                       adicionarQuantidade={() => {}}
-                      value={quantidade as number}
+                      value={quantidade as number < 0 ? 0 : quantidade}
                       key={imagem.id}
-                      onChange={e => console.log(e.target.value)}
+                      onChange={(e) => console.log(e.target.value)}
                     />,
                   ]}
                 >

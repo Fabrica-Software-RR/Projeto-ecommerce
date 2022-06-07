@@ -8,7 +8,7 @@ interface ButtonProps {
 function BotaoAnt({ texto, onClick  }: ButtonProps): React.ReactElement {
   return (
     <Button
-      onClick={() => {}}
+      onClick={() => onClick()}
     danger>{texto}</Button>
   );
 }
