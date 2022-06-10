@@ -41,3 +41,8 @@ export interface InputForm {
   onChange: ChangeEventHandler<HTMLInputElement>
   value: string | number
 }
+
+export interface StateQuantidade  {
+  quantidade: number
+  id :  number | string
+   }

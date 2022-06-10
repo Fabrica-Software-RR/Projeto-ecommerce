@@ -4,7 +4,7 @@ import MenuHerder from '../../Header/Index'
 import SubMenu from '../../SubMenu/Index'
 import { listaBotoes } from '../../ListaTeste/Lista'
 import CarroselDeCards from '../../Carrosel/Index'
-import CardExibicao from '../../Cards'
+import CardExibicao from '../../CardsGroups'
 
 export default function Esqueleto() {
   const logo = '/Fotos/rei-png.png'
