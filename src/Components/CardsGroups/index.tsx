@@ -1,7 +1,6 @@
-import { ReactElement, useEffect, useState } from 'react'
+import { ReactElement, useState } from 'react'
 import { ContainerCard, ContainerCards } from './Style'
 import { listaImagens } from '../ListaTeste/Lista'
-import { StateQuantidade } from '../../Servicos/Interfaces/Interface'
 import { Cards } from '../Cards'
 
 const listaDeCategorias = [
@@ -11,20 +10,17 @@ const listaDeCategorias = [
   'Categoria 4',
 ]
 function CardExibicao(): ReactElement {
-  const [item, setItem] = useState<StateQuantidade>({
-    id: 0,
-    quantidade: 0,
-  })
+  const [item, setItem] = useState(0)
 
-  function aumentarValor(item: StateQuantidade) {
-    setItem({ id: item.id, quantidade: item.quantidade + 1 })
+  function aumentarValor() {
+    setItem(item + 1)
   }
 
-  function diminuirValor(item: StateQuantidade) {
-    setItem({ id: item.id, quantidade: item.quantidade - 1 })
+  function diminuirValor() {
+    if(item > 0) setItem(item - 1)
   }
 
-  return (
+  return ((
     <ContainerCards>
       {listaDeCategorias.map((categoria) => (
         <>
@@ -41,14 +37,18 @@ function CardExibicao(): ReactElement {
           <ContainerCard key={categoria}>
             {listaImagens.map((imagem) =>
               imagem.categoria === categoria ? (
-                <Cards item={item} imagem={imagem} />
+                <Cards
+                item={item}
+                diminuirValor={() => diminuirValor()}
+                aumentarValor={() => aumentarValor()}
+                imagem={imagem} />
               ) : null
             )}
           </ContainerCard>
         </>
       ))}
     </ContainerCards>
-  )
+  ))
 }
 
 export default CardExibicao

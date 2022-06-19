@@ -46,3 +46,11 @@ export interface StateQuantidade  {
   quantidade: number
   id :  number | string
    }
+
+
+  export  interface ICards {
+    imagem: any
+    item: number
+    diminuirValor: () => void
+    aumentarValor: () => void
+  }
