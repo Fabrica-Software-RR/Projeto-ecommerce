@@ -5,12 +5,12 @@ import { ICards } from "../../Servicos/Interfaces/Interface";
 const { Meta } = Card
 
 
-export function Cards({ aumentarValor, diminuirValor, imagem, item }: ICards) {
+export function Cards({ aumentarValor, diminuirValor, imagem, item , key}: ICards) {
 
 
   return (
     <CardAnt
-      key={imagem.id}
+      key={key}
       style={{ width: 300, margin: '20px' }}
       cover={
         // eslint-disable-next-line @next/next/no-img-element
@@ -18,11 +18,11 @@ export function Cards({ aumentarValor, diminuirValor, imagem, item }: ICards) {
       }
       actions={[
         <InputForm
-          diminuirValor={() => diminuirValor()}
-          aumentarValor={() => aumentarValor()}
+          diminuirValor={diminuirValor}
+          aumentarValor={aumentarValor}
           adicionarQuantidade={() => { }}
           value={item}
-          key={imagem.id}
+          key={key}
           onChange={(e) => console.log(e.target.value)}
         />,
       ]}

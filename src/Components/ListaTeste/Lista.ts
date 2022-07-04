@@ -57,5 +57,10 @@ export const listaImagens = [
   },
 ]
 
-
+export  const listaDeCategorias = [
+  'Categoria 1',
+  'Categoria 2',
+  'Categoria 3',
+  'Categoria 4',
+]
 export const listaBotoes = [ 'Todos Produtos', 'Ofertas', 'Novidades', 'Mais Vendidos' ]
