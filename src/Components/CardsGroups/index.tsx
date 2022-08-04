@@ -7,11 +7,11 @@ function CardExibicao(): ReactElement {
   const [item, setItem] = useState(0)
 
   function aumentarValor() {
-    setItem(item + 1)
+ //   setItem(item + 1)
   }
 
   function diminuirValor() {
-    if (item > 0) setItem(item - 1)
+ //   if (item > 0) setItem(item - 1)
   }
 
   return ((
@@ -35,8 +35,6 @@ function CardExibicao(): ReactElement {
                   imagem.categoria === categoria ? (
                     <Cards
                       item={item}
-                      diminuirValor={() => diminuirValor()}
-                      aumentarValor={() => aumentarValor()}
                       imagem={imagem} />
                   ) : <></>
                 )}

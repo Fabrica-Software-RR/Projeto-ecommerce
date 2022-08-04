@@ -5,7 +5,7 @@ import { ICards } from "../../Servicos/Interfaces/Interface";
 const { Meta } = Card
 
 
-export function Cards({ aumentarValor, diminuirValor, imagem, item , key}: ICards) {
+export function Cards({  imagem, item , key}: ICards) {
 
 
   return (
@@ -18,8 +18,6 @@ export function Cards({ aumentarValor, diminuirValor, imagem, item , key}: ICard
       }
       actions={[
         <InputForm
-          diminuirValor={diminuirValor}
-          aumentarValor={aumentarValor}
           adicionarQuantidade={() => { }}
           value={item}
           key={key}

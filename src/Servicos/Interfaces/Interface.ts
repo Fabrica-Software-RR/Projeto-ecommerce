@@ -52,6 +52,5 @@ export interface StateQuantidade  {
     imagem: any
     key ?: string | number
     item: number
-    diminuirValor: () => void
-    aumentarValor: () => void
+
   }
