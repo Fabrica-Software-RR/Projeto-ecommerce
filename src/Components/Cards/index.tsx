@@ -25,7 +25,6 @@ export function Cards({  imagem, item , key}: ICards) {
         />,
       ]}
     >
-      {' '}
       <Meta
         title={imagem.title}
         description={<h2>{imagem.description}</h2>}

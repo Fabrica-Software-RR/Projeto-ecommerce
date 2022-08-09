@@ -6,13 +6,7 @@ import { Cards } from '../Cards'
 function CardExibicao(): ReactElement {
   const [item, setItem] = useState(0)
 
-  function aumentarValor() {
- //   setItem(item + 1)
-  }
 
-  function diminuirValor() {
- //   if (item > 0) setItem(item - 1)
-  }
 
   return ((
     <ContainerCards>
