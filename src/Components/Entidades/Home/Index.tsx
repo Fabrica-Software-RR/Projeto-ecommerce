@@ -1,5 +1,5 @@
 //import { Layout } from 'antd';
-import { Container, C, B, A } from '../../Container/Style'
+import S from '../../Container/Style'
 import MenuHerder from '../../Header/Index'
 import SubMenu from '../../SubMenu/Index'
 import { listaBotoes } from '../../ListaTeste/Lista'
@@ -10,21 +10,21 @@ export default function Esqueleto() {
   const logo = '/Fotos/rei-png.png'
 
   return (
-    <Container>
-      <C>
+    <S.Container>
+      <S.C>
         <MenuHerder
           logo={logo}
           texto={'REI DAS CAPINHAS'}
           placeholder={'Procure seu produto'}
         />
         <SubMenu listaBotoes={listaBotoes} />
-      </C>
-      <B>
+      </S.C>
+      <S.B>
         <CarroselDeCards />
-      </B>
-      <A>
+      </S.B>
+      <S.A>
         <CardExibicao />
-      </A>
-    </Container>
+      </S.A>
+    </S.Container>
   )
 }

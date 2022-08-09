@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+ const Container = styled.div`
   display: block;
   position: absolute;
   top: 0;
@@ -9,7 +9,7 @@ export const Container = styled.div`
   height: 100%;
 `
 
-export const C = styled.div`
+ const C = styled.div`
   display: block;
   margin: 0;
   justify-content: center;
@@ -18,7 +18,7 @@ export const C = styled.div`
 `
 
 //div carrosel ajustar no meio da tela
-export const B = styled.div`
+ const B = styled.div`
   display: block;
   align-items: center;
   justify-content: center;
@@ -27,10 +27,13 @@ export const B = styled.div`
   height: 80%;
 `
 
-export const A = styled.div` // Cards Categoria
+ const A = styled.div` // Cards Categoria
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
 `
+
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {  Container, C, B, A };
