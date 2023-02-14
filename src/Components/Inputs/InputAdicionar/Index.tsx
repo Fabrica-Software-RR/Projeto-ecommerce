@@ -15,6 +15,7 @@ function aumentarValor() {
   setValue(value + 1)
 }
 
+
 function diminuirValor() {
   if (value > 0) setValue(value - 1)
 }
