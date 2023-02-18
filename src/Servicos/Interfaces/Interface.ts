@@ -32,7 +32,7 @@ export interface InputTextoAnt {
   onChange: ChangeEventHandler<HTMLInputElement>;
   value: string | number;
 }
-export interface InputForm {
+export interface InputFormInterface {
   key?: string | number;
   diminuirValor?: () => void;
   aumentarValor?: () => void;
