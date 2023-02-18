@@ -19,11 +19,11 @@ function MenuHerder({ logo, texto, placeholder, loading }: IImage) {
       <Logo style={{ backgroundImage: `url(${logo})` }} />
       <div style={{display:'flex', alignItems:'center', justifyContent:'space-around'}}>
         <WhatsAppOutlined
-          style={{ display:'flex', fontSize: '24px', color: 'black', cursor: 'pointer', margin : '0 10px' }}
+          style={{ display:'flex', fontSize: '36px', color: 'black', cursor: 'pointer', margin : '0 10px' }}
         />
         <Badge count={5}>
           <HeartOutlined
-            style={{ display:'flex',fontSize: '24px', color: 'black', cursor: 'pointer',margin : '0 10px' }}
+            style={{ display:'flex',fontSize: '36px', color: 'black', cursor: 'pointer',margin : '0 10px' }}
           />
         </Badge>
         <Badge count={5}>
@@ -31,7 +31,7 @@ function MenuHerder({ logo, texto, placeholder, loading }: IImage) {
             onClick={() => {
               carrinho()
             }}
-            style={{ display:'flex',fontSize: '24px', color: 'black', cursor: 'pointer',margin : '0 10px' }}
+            style={{ display:'flex',fontSize: '36px', color: 'black', cursor: 'pointer',margin : '0 10px' }}
           />
         </Badge>
       </div>
