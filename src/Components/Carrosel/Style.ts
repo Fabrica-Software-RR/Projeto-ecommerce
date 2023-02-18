@@ -1,37 +1,33 @@
-import { Card, Carousel } from 'antd'
-import styled from 'styled-components'
+import { Card, Carousel } from 'antd';
+import styled from 'styled-components';
 
 export const ContainerCarrosel = styled.div`
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  width: 100%;
-  height:100%;
-  `
+  width: 80%;
+  height: 80%;
+`;
 export const StyledCarousel = styled(Carousel)`
-display: block;
-position:absolute;
-align-items: center;
-justify-content: center;
-width: 100%;
-height: 100%;
-//background-color: blue;
-  `
-export const CardCarrosel = styled(Card)`
-  display: block;
-  width: 600px;
-  height: 600px;
-  background-size: contain;
+  display: flex;
   justify-content: center;
   align-items: center;
-`
+  width: 600px;
+  height: 400px;
+`;
+export const CardCarrosel = styled(Card)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  background-color: aqua;
+  overflow: hidden;
+`;
 
 export const ImageCarrosel = styled.img`
+  object-fit: cover;
   width: 100%;
-  height:600px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-`
-
-
-
+  height: 100%;
+`;

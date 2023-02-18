@@ -1,9 +1,8 @@
-import styled from 'styled-components'
-
+import styled from 'styled-components';
 
 export const Cabecalho = styled.header`
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   width: 100%;
   height: 50%;
   background-color: #f5f5f5;
@@ -13,7 +12,7 @@ export const Cabecalho = styled.header`
     align-items: center;
     font-size: 24px;
   }
-`
+`;
 
 export const Logo = styled.div`
   display: flex;
@@ -22,8 +21,8 @@ export const Logo = styled.div`
   right: 10px;
   padding: 10px;
   width: 30%;
-  height:100%;
- // background-color: blue;
+  height: 100%;
+  // background-color: blue;
   background-size: contain;
   background-repeat: no-repeat;
   @media screen and (max-width: 415px) {
@@ -36,4 +35,4 @@ export const Logo = styled.div`
     justify-content: center;
     background-repeat: no-repeat;
   }
-`
+`;

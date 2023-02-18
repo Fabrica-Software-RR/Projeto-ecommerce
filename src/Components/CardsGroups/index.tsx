@@ -1,14 +1,12 @@
-import { ReactElement, useState } from 'react'
-import { ContainerCard, ContainerCards } from './Style'
-import { listaImagens, listaDeCategorias} from '../ListaTeste/Lista'
-import { Cards } from '../Cards'
+import { ReactElement, useState } from 'react';
+import { ContainerCard, ContainerCards } from './Style';
+import { listaImagens, listaDeCategorias } from '../ListaTeste/Lista';
+import { Cards } from '../Cards';
 
 function CardExibicao(): ReactElement {
-  const [item, setItem] = useState(0)
+  const [item, setItem] = useState(0);
 
-
-
-  return ((
+  return (
     <ContainerCards>
       {listaDeCategorias &&
         listaDeCategorias.map((categoria) => (
@@ -27,16 +25,16 @@ function CardExibicao(): ReactElement {
               {listaImagens &&
                 listaImagens.map((imagem) =>
                   imagem.categoria === categoria ? (
-                    <Cards
-                      item={item}
-                      imagem={imagem} />
-                  ) : <></>
+                    <Cards item={item} imagem={imagem} />
+                  ) : (
+                    <></>
+                  ),
                 )}
             </ContainerCard>
           </>
         ))}
     </ContainerCards>
-  ))
+  );
 }
 
-export default CardExibicao
+export default CardExibicao;

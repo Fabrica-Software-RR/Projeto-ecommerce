@@ -1,8 +1,5 @@
-import styled from "styled-components";
-import { Modal } from 'antd'
-
-
-
+import styled from 'styled-components';
+import { Modal } from 'antd';
 
 export const ModalStyled = styled(Modal)`
   width: 50%;
@@ -19,4 +16,4 @@ export const ModalStyled = styled(Modal)`
     height: 50%;
     margin: 5px;
   }
-`
+`;

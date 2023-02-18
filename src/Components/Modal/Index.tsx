@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { ModalStyled } from './Style'
+import { useState } from 'react';
+import { ModalStyled } from './Style';
 
 interface IModal {
   visivel: boolean;
@@ -10,8 +10,7 @@ interface IModal {
   texto?: string;
 }
 
-function Modal({ texto,children, visivel, onClose, title, onOk }: IModal) {
-
+function Modal({ texto, children, visivel, onClose, title, onOk }: IModal) {
   return (
     <ModalStyled
       title={title}
@@ -23,7 +22,7 @@ function Modal({ texto,children, visivel, onClose, title, onOk }: IModal) {
       {texto && <p>{texto}</p>}
       {children}
     </ModalStyled>
-  )
+  );
 }
 
-export default Modal
+export default Modal;

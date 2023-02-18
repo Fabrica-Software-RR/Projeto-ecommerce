@@ -5,13 +5,12 @@ interface ButtonProps {
   onClick: () => void;
 }
 
-function BotaoAnt({ texto, onClick  }: ButtonProps): React.ReactElement {
+function BotaoAnt({ texto, onClick }: ButtonProps): React.ReactElement {
   return (
-    <Button
-      onClick={() => onClick()}
-    danger>{texto}</Button>
+    <Button onClick={() => onClick()} danger>
+      {texto}
+    </Button>
   );
 }
-
 
 export default BotaoAnt;

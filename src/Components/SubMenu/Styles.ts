@@ -1,6 +1,6 @@
-import { MenuOutlined } from '@ant-design/icons'
-import { Modal } from 'antd'
-import styled from 'styled-components'
+import { MenuOutlined } from '@ant-design/icons';
+import { Modal } from 'antd';
+import styled from 'styled-components';
 
 export const SubMenu = styled.div`
   display: flex;
@@ -17,7 +17,7 @@ export const SubMenu = styled.div`
     align-items: center;
     font-size: 24px;
   }
-`
+`;
 
 export const MenuHamburger = styled(MenuOutlined)`
   font-size: 24px;
@@ -33,7 +33,7 @@ export const MenuHamburger = styled(MenuOutlined)`
     color: #f28705;
     transition: 0.5s;
   }
-`
+`;
 
 export const BotaoMenu = styled.button`
   font-size: 24px;
@@ -54,7 +54,7 @@ export const BotaoMenu = styled.button`
     transition: 0.5s;
     background-color: #f28705;
   }
-`
+`;
 
 export const Buscar = styled.div`
   display: flex;
@@ -64,7 +64,7 @@ export const Buscar = styled.div`
   text-align: center;
   width: 50%;
   height: 50px;
-`
+`;
 
 export const Carrinho = styled.div`
   display: flex;
@@ -77,11 +77,11 @@ export const Carrinho = styled.div`
   font-size: 36px;
   font-weight: bold;
   cursor: pointer;
-    :hover {
+  :hover {
     transition: 0.5s;
     background-color: #f28705;
   }
-`
+`;
 
 export const ModalStyled = styled(Modal)`
   width: 100%;
@@ -97,4 +97,4 @@ export const ModalStyled = styled(Modal)`
     height: 100%;
     margin: 5px;
   }
-`
+`;

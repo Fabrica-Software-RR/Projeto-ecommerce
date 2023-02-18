@@ -1,6 +1,6 @@
-import { InputNumber } from 'antd'
-import { ReactElement } from 'react'
-import { IInputNumberAnt } from '../../../Servicos/Interfaces/Interface'
+import { InputNumber } from 'antd';
+import { ReactElement } from 'react';
+import { IInputNumberAnt } from '../../../Servicos/Interfaces/Interface';
 
 function InputNumberAnt({ pegarValor, value }: IInputNumberAnt): ReactElement {
   return (
@@ -11,7 +11,7 @@ function InputNumberAnt({ pegarValor, value }: IInputNumberAnt): ReactElement {
       onChange={pegarValor}
       value={value}
     />
-  )
+  );
 }
 
-export default InputNumberAnt
+export default InputNumberAnt;

@@ -1,25 +1,25 @@
-import { useState } from 'react'
-import { ListaDeBotoes } from '../../Servicos/Interfaces/Interface'
-import Modal from '../Modal/Index'
-import { SubMenu, MenuHamburger, BotaoMenu, Carrinho } from './Styles'
+import { useState } from 'react';
+import { ListaDeBotoes } from '../../Servicos/Interfaces/Interface';
+import Modal from '../Modal/Index';
+import { SubMenu, MenuHamburger, BotaoMenu, Carrinho } from './Styles';
 
 function RenderSubMenu({ listaBotoes }: ListaDeBotoes) {
-  const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(false);
 
   function onSearch(value: any) {
-    console.log(value)
+    console.log(value);
   }
 
   function onVisibleChange(visible: boolean) {
-    setVisible(visible)
+    setVisible(visible);
   }
 
   function carrinho() {
-    setVisible(true)
+    setVisible(true);
   }
 
   function fecharModal() {
-    setVisible(false)
+    setVisible(false);
   }
 
   return (
@@ -36,8 +36,7 @@ function RenderSubMenu({ listaBotoes }: ListaDeBotoes) {
         onOk={fecharModal}
         texto={'Estes são os itens que você adicionou no carrinho :'}
       />
-
     </SubMenu>
-  )
+  );
 }
-export default RenderSubMenu
+export default RenderSubMenu;
