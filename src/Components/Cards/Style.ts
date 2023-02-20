@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const CardAnt = styled(Card)`
   display: block;
-  width: 100vw;
+  width: 20%;
   height: 30%;
   background-color: #f5f5f5;
 `;

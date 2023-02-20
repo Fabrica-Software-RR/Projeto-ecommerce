@@ -9,7 +9,6 @@ export function Cards({ imagem, item, key }: ICards) {
     <>
       <CardAnt
         key={key}
-        style={{ width: 300, margin: '20px' }}
         cover={
           // eslint-disable-next-line @next/next/no-img-element
           <img alt="example" src={imagem.url as string} />

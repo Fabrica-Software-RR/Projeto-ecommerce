@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   top: 0;
   left: 0;
   width: 100vw;
@@ -33,7 +34,7 @@ const A = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  height:70%;
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export

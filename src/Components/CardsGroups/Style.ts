@@ -6,13 +6,13 @@ export const ContainerCard = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   height: 100%;
+  background-color:aqua;
 `;
 
 export const ContainerCards = styled.div`
   display: flex;
-  margin: 100px 0 0 0;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
