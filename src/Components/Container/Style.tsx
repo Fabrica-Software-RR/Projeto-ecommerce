@@ -12,7 +12,9 @@ const Container = styled.div`
 `;
 
 const C = styled.div`
-  display: block;
+  display: flex;
+  align-items:center;
+  flex-direction:column;
   justify-content: center;
   width: 100%;
   height: 40%;
@@ -25,7 +27,7 @@ const B = styled.div`
   justify-content: center;
   margin: 50px 50px;
   width: 100%;
-  height: 100%;
+  height: auto;
 `;
 
 const A = styled.div`
@@ -34,7 +36,7 @@ const A = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height:70%;
+  height:auto;
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export

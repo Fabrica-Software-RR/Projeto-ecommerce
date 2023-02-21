@@ -4,19 +4,19 @@ export const ContainerCard = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: space-around;
   width: 100%;
-  height: 100%;
-  background-color:aqua;
+  height: auto;
+ background-color:black;
 `;
 
 export const ContainerCards = styled.div`
-  display: flex;
-  flex-wrap: nowrap;
+  display: block;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
+  justify-content: space-between;
+  background-color: azure;
 `;

@@ -13,10 +13,13 @@ function CardExibicao(): ReactElement {
           <>
             <h1
               style={{
+                display:'flex',
+                justifyContent:'center',
                 background: 'white',
                 fontSize: '24px',
-                width: '100%',
+                width: '80%',
                 margin: '',
+                alignItems:'center'
               }}
             >
               {categoria}
